@@ -1,0 +1,1 @@
+sudo ip addr show

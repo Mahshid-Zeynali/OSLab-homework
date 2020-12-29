@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\title{OS9}
+\date{December 2020}
+\maketitle
+
+\section{text}
+
+
+  \large \itshape why \LaTeX ? \\
+\small I It makes beautiful documents \\
+ I Especially mathematics  \\
+ I It was created by scientists, for scientists  \\
+ I A large and active community  \\
+ I It is powerful — you can extend it  \\
+ I Packages for papers, presentations, spreadsheets, . . .
+\end{center}
+
+\section{image}
+\begin{center}
+ \includegraphics[scale=1]{1.jpg}  \\
+  \caption{best nature picture}   
+\end{center}
+  
+
+\section{table}
+\begin{tabular}{|r|1|}
+  \hline
+  7C0 & hexadecimal \\
+  3700 & octal \\ \cline{2-2}
+  11111000000 & binary \\
+  \hline \hline
+  1984 & decimal \\
+  \hline
+\end{tabular}
+
+\section{formula}
+\begin{equation}\label{eqn:einstein}
+E=mc^2\tag{*}
+\end{equation}
+% \eqref{eqn:einstein}
+
+\begin{align*}
+\sin A \cos B &= \frac{1}{2}\left[ \sin(A-B)+\sin(A+B) \right] \\
+\sin A \sin B &= \frac{1}{2}\left[ \sin(A-B)-\cos(A+B) \right] \\
+\cos A \cos B &= \frac{1}{2}\left[ \cos(A-B)+\cos(A+B) \right] \\
+\end{align*}
+
+
+\begin{theorem}
+Use the Stirling formula to show that
+\begin{equation*}
+\frac{a^n}{n!}\sim\frac{1}{\sqrt{2\pi n}}
+\left(\frac{ae}{n}\right)^n~~~(n\to\infty)
+\end{equation*}
+when a is any constant, and deduce that
+\[ \lim_{n \to \infty}\frac{a^n}{n!}=0\]
+\end{theorem}
+
+\section{code}
+\begin{latin}
+\begin{lstlisting}[language=C]
+#include <stdio.h>
+#define N 10
+/* Block
+ * comment */
+
+int main()
+{
+    int i;
+
+    // Line comment.
+    puts("Hello world!");
+
+    for (i = 0; i < N; i++)
+    {
+        puts("LaTeX is also great for programmers!");
+    }
+
+    return 0;
+}
+\end{lstlisting}
+\end{latin}
+
+\end{document}
